@@ -1,0 +1,148 @@
+product owner : Birimler müdürü
+
+Business user :iş veren : müşteri
+BA -> analiz
+
+Takım Lideri
+Scrum Master
+Dev lead
+Dev
+Test lead
+tester
+
+
+Business User -> BA -> Developer
+Developer yazmaya başlar
+   -> Kendi kodunu test eder (Unit test),
+   -> Önce test sonra kodlama yapar
+   -> test geçti yazılım bitti
+-> tester a verdi. tester developerın
+   yazdığının çalıştığını test etti
+(unit) Test Driven Development -> TDD denir.
+test odaklı geliştirme
+
+Business User -> BA -> Developer + Tester
+Tester da başlasın test kolarını yazmaya
+Dev de başlasın kodlamaya
+
+Testter Business userın isteğini dev yapmı mı ?
+(last user) Behavior Driven Development  -> BDD
+Davranış odaklı geliştirme
+
+Agile -> şunu der, yaptığını sürekli müşteriye
+göster, müşteriyi sürekli işin içinde tut.
+böylece emeğin boşa gitmesin.
+
+BDD i tamam
+
+test case leri yazarken isimlendirme
+
+TC_TNM_KUL_01 -> test case (senaryo) -> TestNG %65
+
+Önce siteye git                  -> test case in STEP 1
+Sonra Login bilgilerini gönder      STEP 2
+Sonra girdiği doğrula               STEP 3
+
+Cucumber Tool u %35
+BDD Test Tool
+Agile a tam uygun
+
+“ Agile methodolojisi ile iş yapıyorsanız ve uygulama testi için
+BDD kullanmıyorsanız kendinizle çelişiyorsunuzdur. ”
+
+
+
+
+
+
+
+
+
+
+senaryolarını -> FeatureFiles (siteye git)
+steps         -> StepDefinitions
+POM           -> Pages
+Utilities     -> Driver ve gerekli bileşenler
+çalıştırıcı   -> Runners
+
+
+Kendi hazırladığımı her projede kullanabileceğimiz
+dosyalardan oluşan şablona FRAMEWORK denir.
+
+
+
+
+
+
+
+
+
+
+projeye LİB EKLEME
+
+1- dosyayı bilgisayarına indir ve yükle
+2- mavendan o anda istekte bulun yüklesin.
+3- projeninin içinde bir dosya olsaydı
+   oraya gereklş bağımlılıklar yani libler
+   ismini versiyonun yazsdaydık
+   kendisi otomatik indirseydi,
+   projeyi başkasına verince de , alan kişi
+   sadece bu dosyadakileri yükle desyedi
+
+maven : proje yönetim modülü
+
+
+
+Locatorları yazdığımız PAGE OBJECT MODEL : POM
+Bağımlılıkların LİB lerin içine yazıldığı dosya
+                    PROJECT OBJECT MODEL : POM
+
+
+
+
+
+
+
+
+
+
+```Maven
+1- Yeni projeye tıklattım-> Proje Tipi olarak MAVEN
+   seçildi.satandart sonlandırıldı.
+
+2- Klasör yapısını inceledik:
+   main -> Developer ın source kodları
+   test -> Testerın kodları
+
+3- Mavenın verdiği düzenli yapının kendi tarafımızda ,
+   bizde kendi düzenli klasör yapımızı oluşturacağız.
+   Klasörler
+
+   FeatureFiles   -> Senaryolarımızın olduğu klasör
+   StepDefinitions-> Senaryoların çalışan adımları - metodları burada olacak
+   Pages          -> Page Object Modell sayfalarımız POM (@FindBy)
+   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarımız
+   Runners        -> Çalıştırıcılar
+```
+
+
+
+
+
+
+
+
+
+3- Ayarlar
+   A) Intellij Editör ayarları
+      2 tane Plugin ekleyeceğiz
+        1- Cucumber for Java
+        2- Gherkin Language  -> https://cucumber.io/docs/gherkin/reference/#keywords
+
+
+
+
+
+
+
+

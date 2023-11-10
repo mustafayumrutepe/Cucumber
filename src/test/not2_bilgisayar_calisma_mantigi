@@ -1,0 +1,30 @@
+biglisayarları gelişimi
+
+ilk işlemci
+80 86 -> ilk işlemci
+80286 -> 286 işlemci
+80386 -> 386 işlemci
+486
+586 -> pentium işlemci 4GHz hız
+5GHz işlemci yapılamıyor, kullanılan
+içindeki parçalar o kadar hızın getirdiği
+sıcaklığa dayanamıyor.
+
+işlemcinin içinde esas işe yapan çekirdek ALU
+isminde, bunun sayısını artıralım.
+çekirdek sayısı artırılıyor.
+2 core i3  2GHz -> 4GHz
+4 core i5
+6-8 core i7
+
+çekirdeğe bilgi sağlayan bellekler var
+ön bellek deniyor L1 L2 cash 2,4,6 MB
+Harddisk ten -> RAM -> L1 L2 Cash -> ALU(işlemciye)
+1TB    >        8GB   >     6MB    > CPU
+
+Gerçek zamanlı Thread aslında kim yapıyor CORE
+her bir CORE Thread demek aslında
+
+Windows OS, 30 thread i bu 2 gerçek boru hattı
+üzerinde organize ederek, aynı anda çalıştırıyormuş
+gibi yapıyor.
